@@ -53,7 +53,7 @@ def gen_feature():
     img_expandim = np.expand_dims(img, axis=0)
     encoded = np.array(encoder(img_expandim))
     print(encoded.shape)
-    facevec = json.dumps({'vactor':encoded[0].tolist()})
+    facevec = json.dumps({'vector':encoded[0].tolist()})
     return facevec
     
 
